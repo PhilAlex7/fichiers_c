@@ -23,8 +23,8 @@ int main(int argc, char **argv)
         return 2;
     }
 
-    Attributs *attributs;
-    AttributsRepere *attributs_repere;
+    Attributs *attributs = malloc(sizeof(*attributs));
+    AttributsRepere *attributs_repere = malloc(sizeof(*attributs_repere));
     addAttr(attributs, attributs_repere, "div");
 
     while(attributs_repere != NULL)
